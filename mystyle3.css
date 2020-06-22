@@ -1,0 +1,71 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+ul{
+	list-style-type:none;
+	float:left;
+	margin-top:25px;
+}
+ ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	padding:10px 25px;
+	border:1px solid tranparent;
+}
+ul li a:hover{
+	background-color:black;
+	color:green;
+}
+ul li.active a{
+	background-color:white;
+	color:black;
+}
+.column {
+  float:left;
+  width: 20%;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("yoga.jpg");
+  height: 100%; 
+  background-position: center;
+  
+  background-size: cover;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
